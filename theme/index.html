@@ -127,6 +127,7 @@
   </nav>
 
   <div class="main">
+    
     <div class="py-4 quick-news-container">
       <div class="container d-flex">
         <div class="quick-news__icon">trending now</div>
@@ -139,6 +140,45 @@
         </div>
       </div>
     </div>
+    <!-- /quick news -->
+
+    <div class="slider-container">
+      <div class="container">
+        <div class="no-gutters row">
+          <div class="col-md-8">
+            <div class="slider h-100"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget">
+              <header class="widget__header">
+                <strong>Trending</strong> Posts
+              </header>
+              <div class="bg-white p-3 widget__body">
+                <!-- ko foreach: news -->
+                <div class="widget-item news">
+                  <a href="#" class="news__cover">
+                    <img src="./images/noimage.gif" alt="post">
+                  </a>
+                  <div class="news__body">
+                    <div class="news-tags small"><a href="#" data-bind="text: category, attr: { href: url }"></a></div>
+                    <h3 class="news-title"><a href="#" data-bind="text: title, attr: { href: url }"></a></h3>
+                    <div class="news-time small">
+                      <datetime data-bind="text: createDate"></datetime>
+                    </div>
+                  </div>
+                </div>
+                <!-- /ko -->
+              </div>
+              <div class="widget__footer">
+                <a href="#">read more <span class="circle border"><i class="mdi mdi-arrow-right"></i></span></a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
   <!--// main -->
 
@@ -153,6 +193,7 @@
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/jquery.scrollTo.min.js"></script>
   <script src="./js/jquery.waypoints.min.js"></script>
+  <script src="./js/knockout-3.4.2.js"></script>
   <script src="./js/app.js"></script>
 </body>
 

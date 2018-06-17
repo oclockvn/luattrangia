@@ -102,6 +102,21 @@ button {
   top: 0;
   z-index: 2010; }
 
+.circle {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0; }
+
 .top-head {
   line-height: 32px;
   overflow: hidden; }
@@ -296,6 +311,68 @@ ol.breadcrumb {
     border-left: 6px solid #000;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent; }
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .news .news__cover {
+    width: 120px;
+    height: 120px;
+    display: block; }
+    .news .news__cover img {
+      max-width: 100%; }
+  .news .news__body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 16px; }
+    .news .news__body .news-title {
+      margin: 0;
+      margin-bottom: 4px;
+      font-size: 1.2em; }
+      .news .news__body .news-title a {
+        display: block;
+        font-size: 1em;
+        color: #181818;
+        font-weight: bold; }
+  .news .news-tags a {
+    color: #888; }
+  .news .news-time {
+    color: #888; }
+
+.widget {
+  background: #fff; }
+  .widget .widget__header {
+    padding: 8px 16px;
+    font-size: 1.4em; }
+  .widget .widget__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .widget .widget__footer a {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 8px 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: .8em;
+      background: #fcfcfc; }
+  .widget .widget-item + .widget-item {
+    margin-top: 16px; }
 
 html, body {
   font-family: 'Roboto Condensed', serif; }
