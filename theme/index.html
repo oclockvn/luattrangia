@@ -17,7 +17,7 @@
   <title>Luat Tran Gia</title>
 </head>
 
-<body class="bg-light">
+<body>
   <header class="header bg-white" id="header">
     <div class="bg-black top-head">
       <div class="container">
@@ -122,20 +122,27 @@
           <a href="#">contacts</a>
         </li>
       </ul>
-      <a href="#" class="align-items-center d-flex p-2 search-button tc-main" role="button"><i class="mdi mdi-magnify"></i></a>
+      <a href="#" class="align-items-center d-flex p-2 search-button tc-main" role="button">
+        <i class="mdi mdi-magnify"></i>
+      </a>
     </div>
   </nav>
 
   <div class="main">
-    
+
     <div class="py-4 quick-news-container">
       <div class="container d-flex">
         <div class="quick-news__icon">trending now</div>
         <div class="quick-news__content">
-          <div class="quick-news__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt neque sapiente libero soluta, architecto quos reiciendis...</div>
+          <div class="quick-news__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt neque sapiente libero soluta, architecto quos
+            reiciendis...</div>
           <div class="owl-nav">
-            <a href="#" class="nav-prev"><i class="mdi mdi-arrow-left"></i></a>
-            <a href="#" class="nav-next"><i class="mdi mdi-arrow-right"></i></a>
+            <a href="#" class="nav-prev">
+              <i class="mdi mdi-arrow-left"></i>
+            </a>
+            <a href="#" class="nav-next">
+              <i class="mdi mdi-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -146,7 +153,28 @@
       <div class="container">
         <div class="no-gutters row">
           <div class="col-md-8">
-            <div class="slider h-100"></div>
+            <div class="slider h-100 owl-nav--center-y owl-nav--circle owl-nav--spacing">
+              <article class="slider-item">
+                <figure class="slider-item-cover">
+                    <a href="#">
+                        <img src="./images/slider.jpg" alt="" class="img-fluid">
+                      </a>
+                </figure>
+                <div class="slider-item-details">
+                  <h3>
+                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ea, labore</a>
+                  </h3>
+                </div>
+              </article>
+              <div class="owl-nav">
+                <a href="#" class="nav-prev">
+                  <i class="mdi mdi-arrow-left"></i>
+                </a>
+                <a href="#" class="nav-next">
+                  <i class="mdi mdi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
             <div class="widget">
@@ -160,8 +188,12 @@
                     <img src="./images/noimage.gif" alt="post">
                   </a>
                   <div class="news__body">
-                    <div class="news-tags small"><a href="#" data-bind="text: category, attr: { href: url }"></a></div>
-                    <h3 class="news-title"><a href="#" data-bind="text: title, attr: { href: url }"></a></h3>
+                    <div class="news-tags small">
+                      <a href="#" data-bind="text: category, attr: { href: url }"></a>
+                    </div>
+                    <h3 class="news-title">
+                      <a href="#" data-bind="text: title, attr: { href: url }"></a>
+                    </h3>
                     <div class="news-time small">
                       <datetime data-bind="text: createDate"></datetime>
                     </div>
@@ -170,9 +202,13 @@
                 <!-- /ko -->
               </div>
               <div class="widget__footer">
-                <a href="#">read more <span class="circle border"><i class="mdi mdi-arrow-right"></i></span></a>
+                <a href="#">read more
+                  <span class="circle border">
+                    <i class="mdi mdi-arrow-right"></i>
+                  </span>
+                </a>
               </div>
-            </div>            
+            </div>
           </div>
         </div>
       </div>

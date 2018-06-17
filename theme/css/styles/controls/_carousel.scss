@@ -1,0 +1,52 @@
+.owl-nav {
+    display: flex;
+    align-items: center;
+
+    a, button {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        width: 32px;
+        height: 32px;        
+        color: #fff;     
+        outline: none;
+    }
+}
+
+.owl-nav--center-y {
+    .owl-nav {
+        a, button {
+            position: absolute;
+            top: 50%;
+            margin-top: -16px;
+            background: rgba(0, 0, 0, 0.4);
+            outline: none;
+
+            &.nav-prev {
+                left: 8px;
+            }
+            
+            &.nav-next {
+                right: 8px;
+            }
+        }
+    }
+}
+
+.owl-nav--circle {
+    .owl-nav {
+        a, button {
+            border-radius: 50%;
+        }
+    }
+}
+
+.owl-nav--spacing {
+    .owl-nav {
+        a, button {
+            + a, + button {
+                margin-left: 4px;
+            }
+        }
+    }
+}
