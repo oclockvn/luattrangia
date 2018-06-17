@@ -1,0 +1,97 @@
+.menu { 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+
+    &.root-menu {
+        > li {
+            > a {
+                text-transform: uppercase;
+                color: $main-color;
+
+                &:hover {
+                    color: $main-color-hover;
+                }
+            }
+        }        
+    }
+
+    a {
+        display: block;        
+        padding: 16px 10px;       
+        font-size: 80%;
+        font-size: 0.9em;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .child-menu {       
+        position: absolute;
+        top: 100%;
+        left: 0;
+        white-space: nowrap;
+        display: block;
+        padding: 8px 0;
+        transition: .2s;
+        opacity: 0;
+        visibility: hidden;
+        background: #000;        
+    }
+
+    li {
+        &.has-child {
+            position: relative;
+
+            > a:after {
+                content: "\F140";
+                display: inline-block;
+                font: normal normal normal 24px/1 "Material Design Icons";
+                font-size: inherit;
+                text-rendering: auto;
+                line-height: inherit;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background: red;
+                display: block;
+                transition: .2s;
+                transform: scaleX(0);
+                transform-origin: center;
+                content: '';
+            }
+
+            .menu {
+                display: block;
+
+                a {
+                    padding: 8px 16px;
+                    color: #e3e3e3;    
+
+                    &:hover {
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+            }
+
+            &:hover {
+                &:after {    
+                    transform: scaleX(1);
+                }
+
+                .child-menu {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }    
+}

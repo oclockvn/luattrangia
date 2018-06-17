@@ -141,6 +141,78 @@ button {
     font-size: 3em;
     text-transform: uppercase; }
 
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .menu.root-menu > li > a {
+    text-transform: uppercase;
+    color: #a68136; }
+    .menu.root-menu > li > a:hover {
+      color: #c49c4b; }
+  .menu a {
+    display: block;
+    padding: 16px 10px;
+    font-size: 80%;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-decoration: none; }
+  .menu .child-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+    display: block;
+    padding: 8px 0;
+    -webkit-transition: .2s;
+    transition: .2s;
+    opacity: 0;
+    visibility: hidden;
+    background: #000; }
+  .menu li.has-child {
+    position: relative; }
+    .menu li.has-child > a:after {
+      content: "\F140";
+      display: inline-block;
+      font: normal normal normal 24px/1 "Material Design Icons";
+      font-size: inherit;
+      text-rendering: auto;
+      line-height: inherit;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .menu li.has-child:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: red;
+      display: block;
+      -webkit-transition: .2s;
+      transition: .2s;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      content: ''; }
+    .menu li.has-child .menu {
+      display: block; }
+      .menu li.has-child .menu a {
+        padding: 8px 16px;
+        color: #e3e3e3; }
+        .menu li.has-child .menu a:hover {
+          background: #fff;
+          color: #000; }
+    .menu li.has-child:hover:after {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1); }
+    .menu li.has-child:hover .child-menu {
+      opacity: 1;
+      visibility: visible; }
+
 .slider {
   height: 400px;
   background: #a68136; }
