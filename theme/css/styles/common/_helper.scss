@@ -92,3 +92,13 @@
     height: 24px;
     padding: 0;
 }
+
+.gutters-equal.row [class*=col-] {
+    &:first-child {
+        padding-right: 8px;
+    }
+    
+    &:last-child {
+        padding-left: 8px;
+    }
+}

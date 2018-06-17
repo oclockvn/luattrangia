@@ -135,7 +135,8 @@
         <div class="quick-news__icon">trending now</div>
         <div class="quick-news__content">
           <div class="quick-news__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt neque sapiente libero soluta, architecto quos
-            reiciendis...</div>
+            reiciendis...
+          </div>
           <div class="owl-nav">
             <a href="#" class="nav-prev">
               <i class="mdi mdi-arrow-left"></i>
@@ -156,9 +157,9 @@
             <div class="slider h-100 owl-nav--center-y owl-nav--circle owl-nav--spacing">
               <article class="slider-item">
                 <figure class="slider-item-cover">
-                    <a href="#">
-                        <img src="./images/slider.jpg" alt="" class="img-fluid">
-                      </a>
+                  <a href="#">
+                    <img src="./images/slider.jpg" alt="" class="img-fluid">
+                  </a>
                 </figure>
                 <div class="slider-item-details">
                   <h3>
@@ -213,6 +214,69 @@
         </div>
       </div>
     </div>
+
+    <div class="service-container bg-light">
+      <div class="align-items-center d-flex justify-content-center p-5 text-center">services</div>
+    </div>
+
+    <div class="section-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="widget">
+              <div class="widget__header with-corner d-flex justify-content-between">
+                <div>
+                  <strong>Latest</strong> Posts
+                </div>
+                <div class="align-items-center d-md-flex tabs">
+                  <a href="#">all</a>
+                  <a href="#">business</a>
+                  <a href="#">gatgets</a>
+                  <a href="#">design</a>
+                  <a href="#">fashion</a>
+                  <a href="#">video</a>
+                </div>
+              </div>
+              <div class="widget__body p-3 my-2">
+                <div class="row gutters-equal">
+                  <!-- ko foreach: posts -->
+                  <div class="col-md-6">
+                    <div class="news news--horizontal">
+                      <a href="#" class="news__cover">
+                        <img src="./images/news.jpg" alt="post">
+                      </a>
+                      <div class="news__body">
+                        <div class="news-tags small">
+                          <a href="#" data-bind="text: category, attr: { href: url }"></a>
+                        </div>
+                        <h3 class="news-title">
+                          <a href="#" data-bind="text: title, attr: { href: url }"></a>
+                        </h3>
+                        <div class="news-time small">
+                          <datetime data-bind="text: createDate"></datetime> <span>by <strong data-bind="text: creatorName"></strong></span>
+                        </div>
+                        <div class="news-excerpt" data-bind="text: excerpt"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /ko -->
+                </div>
+              </div>
+              <div class="widget__footer">
+                <a href="#">more posts</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
 
 
   </div>
