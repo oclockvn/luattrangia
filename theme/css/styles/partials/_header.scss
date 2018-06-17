@@ -28,3 +28,23 @@
         }
     }
 }
+
+.main-head {
+    .ads {
+        width: 728px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .brand {
+        text-decoration: none;
+
+        span {
+            font-weight: 800;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+    }
+}
