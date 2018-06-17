@@ -64,9 +64,13 @@
 .bg-main {
     background-color: $main-color !important;
 
-    &:hover {
+    &.bg-main--hoverable:hover {
         background-color: $main-color-hover !important;
     }
+}
+
+.bg-black {
+    background-color: #000 !important;
 }
 
 .em-1 {

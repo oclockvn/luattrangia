@@ -82,14 +82,17 @@ button {
   font-size: .9em; }
 
 .tc-main {
-  color: #4caf50 !important; }
+  color: #a68136 !important; }
   .tc-main:hover {
-    color: #6ec071 !important; }
+    color: #c49c4b !important; }
 
 .bg-main {
-  background-color: #4caf50 !important; }
-  .bg-main:hover {
-    background-color: #6ec071 !important; }
+  background-color: #a68136 !important; }
+  .bg-main.bg-main--hoverable:hover {
+    background-color: #c49c4b !important; }
+
+.bg-black {
+  background-color: #000 !important; }
 
 .em-1 {
   font-size: 1em; }
@@ -99,19 +102,39 @@ button {
   top: 0;
   z-index: 2010; }
 
+.top-head {
+  line-height: 32px;
+  overflow: hidden; }
+  .top-head .lang-container .lang {
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85em; }
+    .top-head .lang-container .lang.active {
+      background: #fff;
+      color: #000; }
+  .top-head .social-container .social {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; }
+
 .slider {
   height: 400px;
-  background: #4caf50; }
+  background: #a68136; }
 
 ol.breadcrumb {
   margin: 0;
   border-radius: 2px;
   background: #edf7ee;
-  background: #eaf6eb; }
+  background: #f0e6d1; }
   ol.breadcrumb a {
     color: #000; }
   ol.breadcrumb li.active {
-    color: #4caf50; }
+    color: #a68136; }
 
 html, body {
   font-family: 'Roboto Condensed', serif; }
