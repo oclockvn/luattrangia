@@ -173,7 +173,8 @@ button {
     visibility: hidden;
     background: #000; }
   .menu li.has-child {
-    position: relative; }
+    position: relative;
+    z-index: 2000; }
     .menu li.has-child > a:after {
       content: "\F140";
       display: inline-block;

@@ -42,6 +42,7 @@
     li {
         &.has-child {
             position: relative;
+            z-index: $menu-index;
 
             > a:after {
                 content: "\F140";
