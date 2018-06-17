@@ -1,0 +1,43 @@
+
+
+.cover--container {
+    .cover {    
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        transition: .3s ease-in-out;
+        display: block;
+        
+        img {
+            transition: .3s ease-in-out;        
+            object-fit: cover;
+    
+            &.cover-back {
+                transform: translateX(25%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0 !important;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &:hover {
+        .cover {
+            img {
+                &.cover-back {
+                    transform: translateX(0);
+                    opacity: 1 !important;
+                    visibility: visible;
+                }
+                
+                &.cover-front {
+                    transform: translateX(-25%);
+                    opacity: 0 !important;
+                    visibility: hidden;
+                }
+            }
+        }
+    }   
+}

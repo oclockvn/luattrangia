@@ -1,0 +1,46 @@
+.header-search-container {       
+    @include media-min($md) {
+        max-width: $header-search-w; // 220px;    
+    }
+    box-shadow: 0 0 32px 1px rgba(0, 0, 0, 0.2);
+
+    .head {
+        background: $main-color; // #4caf50;
+        color: $light-color; // #fff;
+        font-size: 0.8em;
+    }
+
+    .content {    
+        background: $bgc;
+    }
+    
+    .foot {
+        .form-control {
+            width: calc(100% - 32px);
+        }
+    }
+}
+
+.banner {
+    display: block;
+    text-decoration: none;
+
+    &.banner--top {
+        @include media-min($sm) {
+            img {
+                max-width: $banner-top-w; // 620px
+            }
+        }
+    }
+}
+
+.brand {
+    display: block;
+
+    .logo {
+        max-width: $logo-w; // 200px;
+    }
+}
+
+
+

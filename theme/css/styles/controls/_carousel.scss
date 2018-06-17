@@ -1,0 +1,25 @@
+.owl-nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+.owl-carousel.carousel--nav .owl-nav button[type=button][class*=owl] {
+    border: 1px solid $main-color;
+    padding: 4px 8px !important;
+    margin-left: 4px;
+    outline: none;
+    box-shadow: none;
+
+    &:hover {
+        background: $main-color;
+        color: #fff;
+    }
+    
+    &.disabled {
+        background: #eee;
+        border-color: #eee;
+        color: #aaa;
+    }
+}

@@ -1,0 +1,62 @@
+.proj {
+    width: $proj-cover-w;
+
+    img {
+        max-width: $proj-cover-w; // 200px;
+        min-width: $proj-cover-w; // 200px;
+    }
+    
+    .proj__title {
+        display: block;
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 8px 0;
+        color: $dark-color;
+
+        h5 {
+            font-size: 0.9em;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    
+    .proj__location {
+        text-transform: capitalize;
+        font-size: .9em;
+    }
+}
+
+.projects {
+    &.owl-carousel {
+        button.owl-dot {    
+            width: 32px;
+            height: 4px;
+            display: block;
+            background: $bgc;
+
+            &.active {
+                background: $main-color;
+            }
+
+            + .owl-dot {
+                margin-left: 4px;
+            }
+
+            @include media($sm) {
+                width: 24px;
+            }
+        }
+        
+        .owl-dots {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            top: -19px;
+
+            @include media($sm) {
+                justify-content: start;
+            }
+        }
+    }    
+}

@@ -1,0 +1,14 @@
+ol.breadcrumb {
+    margin: 0;
+    border-radius: 2px;
+    background: hsl(122, 39%, 95%);
+    background: lighten($main-color, 45%);
+
+    a {
+        color: $dark-color;
+    }
+    
+    li.active {
+        color: $main-color;
+    }
+}

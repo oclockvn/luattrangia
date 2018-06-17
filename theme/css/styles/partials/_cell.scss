@@ -1,0 +1,127 @@
+.cell-container {
+    width: 300px;
+    min-width: 300px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: .3s ease-in-out;
+    box-shadow: 4px 3px 9px 0 rgba(0,0,0,.1);
+    margin: 32px 0;
+
+    &:hover {
+        box-shadow: 0 0 32px 6px rgba(0,0,0,.3);
+
+        .cell--body-cover {
+            .cover-back {
+                transform: translateX(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .cover-front {
+                transform: translateX(-25%);
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    .cell--header {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &.is-hot {
+            background: url(../../images/hot.gif) 95% center no-repeat;
+        }
+    }
+
+    .cell--body-cover {
+        display: block;        
+        overflow: hidden;
+        position: relative;
+        width: 300px;
+        height: 300px;
+
+        img {
+            transition: .3s ease-in-out;
+            min-width: 300px;
+            min-height: 300px;
+            object-fit: cover;
+
+            &.cover-back {
+                transform: translateX(25%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    .cell--footer {
+        padding: 16px;
+        
+        .cell--footer-line {
+            display: flex;
+
+            strong {    
+                min-width: 64px;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 4px;
+
+                &:after {
+                    content: ':';
+                }
+            }
+
+            span {
+                color: #f42;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .cell--body {
+        overflow: hidden;
+    }
+}
+
+.grid--line {
+    display: flex; 
+    
+    // + .grid--line {
+    //     margin-top: 32px;
+    // }
+
+    .cell-container + .cell-container {
+        margin-left: 32px;
+    }
+
+    // &:first-child .cell-container {
+    //     margin-top: 0;
+    // }
+}
+
+.grid-container-cell {
+    .cell-container {
+        width: calc(100% / 4);
+        min-width: calc(100% / 4);
+        box-shadow: none;
+        padding: 0 16px;
+
+        &:hover {
+            box-shadow: 0 0 32px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .cell--header {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
