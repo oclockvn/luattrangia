@@ -224,7 +224,7 @@
         <div class="row">
           <div class="col-md-8">
             <div class="widget">
-              <div class="widget__header with-corner d-flex justify-content-between">
+              <div class="widget__header with-corner d-md-flex justify-content-between">
                 <div>
                   <strong>Latest</strong> Posts
                 </div>
@@ -238,9 +238,9 @@
                 </div>
               </div>
               <div class="my-2 p-3 widget__body">
-                <div class="row gutters-equal">
+                <div class="d-block d-md-flex gutters-equal2 row">
                   <!-- ko foreach: posts -->
-                  <div class="equal">
+                  <div class="equal2 col-md-6">
                     <div class="news news--horizontal">
                       <a href="#" class="news__cover">
                         <img src="./images/news.jpg" alt="post">
@@ -260,11 +260,13 @@
                     </div>
                   </div>
                   <!-- /ko -->
-                </div>                
+                </div>     
+                
+                <div class="border-top mt-3 d-none d-md-block"></div>
 
-                <div class="gutters-equal news-sm row">
+                <div class="gutters-equal+news-sm row">
                   <!-- ko foreach: posts -->
-                  <div class="equal mt-3">
+                  <div class="equal2 col-md-6 mt-3">
                     <div class="news">
                       <a href="#" class="news__cover">
                         <img src="./images/news.jpg" alt="post">
@@ -282,7 +284,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="equal mt-3">
+                  <div class="equal2 col-md-6 mt-3">
                     <div class="news">
                       <a href="#" class="news__cover">
                         <img src="./images/news.jpg" alt="post">
@@ -301,11 +303,54 @@
                     </div>
                   </div>
                   <!-- /ko -->
-                </div>                
+                </div>   
+                
+                <div class="border-top mt-3 d-none d-md-block"></div>
+
+                <div class="gutters-equal+news-sm row">
+                  <!-- ko foreach: posts -->
+                  <div class="col-md-6 mt-3">
+                    <div class="news news--cover-0 news--thin">                      
+                      <div class="news__body">                        
+                        <h3 class="news-title">
+                          <a href="#" data-bind="text: title, attr: { href: url }"></a>
+                        </h3>
+                        <div class="news-time small">
+                          <datetime data-bind="text: createDate"></datetime> <span>by <strong data-bind="text: creatorName"></strong></span>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <div class="news news--cover-0 news--thin">                     
+                      <div class="news__body">                        
+                        <h3 class="news-title">
+                          <a href="#" data-bind="text: title, attr: { href: url }"></a>
+                        </h3>
+                        <div class="news-time small">
+                          <datetime data-bind="text: createDate"></datetime> <span>by <strong data-bind="text: creatorName"></strong></span>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <div class="news news--cover-0 news--thin">                     
+                      <div class="news__body">                        
+                        <h3 class="news-title">
+                          <a href="#" data-bind="text: title, attr: { href: url }"></a>
+                        </h3>
+                        <div class="news-time small">
+                          <datetime data-bind="text: createDate"></datetime> <span>by <strong data-bind="text: creatorName"></strong></span>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /ko -->
+                </div>      
 
               </div>
               <div class="widget__footer">
-                <a href="#">more posts</a>
+                <a href="#" class="justify-content-center">more posts</a>
               </div>
 
             </div>

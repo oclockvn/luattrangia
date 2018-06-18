@@ -22,6 +22,23 @@ $news-title-color: #181818;
         }
     }
 
+    &.news--cover-0 {
+        .news__body {
+            margin-left: 0;
+        }
+    }
+
+    &.news--thin {
+        .news-title {
+            font-size: .9em;
+            font-weight: 400;
+
+            a {    
+                font-weight: 400;
+            }
+        }        
+    }
+
     .news__cover {
         width: 120px;
         height: 120px;
@@ -52,18 +69,18 @@ $news-title-color: #181818;
     .news__body {
         flex: 1;
         margin-left: 16px;
+    }
 
-        .news-title {
-            margin: 0;
-            margin-bottom: 4px;            
-            font-size: 1.2em;
+    .news-title {
+        margin: 0;
+        margin-bottom: 4px;            
+        font-size: 1.2em;
 
-            a {
-                display: block;
-                font-size: 1em;
-                color: $news-title-color;
-                font-weight: bold;
-            }
+        a {
+            display: block;
+            font-size: 1em;
+            color: $news-title-color;
+            font-weight: bold;
         }
     }
 
@@ -84,6 +101,12 @@ $news-title-color: #181818;
     &:hover {
         .news__cover:after {
             background: rgba(0, 0, 0, 0.4);
+        }
+
+        .news-title {
+            a {
+                color: $main-color;
+            }
         }
     }
 }
