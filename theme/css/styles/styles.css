@@ -574,6 +574,34 @@ ol.breadcrumb {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433',endColorstr='#bc1888',GradientType=1); }
 
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 16px 8px 16px 0; }
+  .faq .faq__letter {
+    background: #f42;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 600;
+    margin-left: -8px; }
+  .faq .faq__body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 16px; }
+    .faq .faq__body .faq-content {
+      color: #888;
+      font-size: .9em; }
+  .faq + .faq {
+    border-top: 1px solid #eee; }
+
 html, body {
   font-family: 'Roboto Condensed', serif;
   background-color: #ebebeb; }

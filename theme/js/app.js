@@ -57,6 +57,8 @@ class QuickNewsViewModel {
                 excerpt: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit eos nobis voluptates laboriosam ex ducimus inventore dolor obcaecati voluptatum ut nostrum unde molestias, incidunt non qui! Facere dolor excepturi tenetur."
             }
         ]);
+
+        this.faq = ko.observableArray([1,2,3,4,5,6]);
     }    
 }
 
