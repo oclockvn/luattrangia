@@ -237,10 +237,10 @@
                   <a href="#">video</a>
                 </div>
               </div>
-              <div class="widget__body p-3 my-2">
+              <div class="my-2 p-3 widget__body">
                 <div class="row gutters-equal">
                   <!-- ko foreach: posts -->
-                  <div class="col-md-6">
+                  <div class="equal">
                     <div class="news news--horizontal">
                       <a href="#" class="news__cover">
                         <img src="./images/news.jpg" alt="post">
@@ -260,7 +260,49 @@
                     </div>
                   </div>
                   <!-- /ko -->
-                </div>
+                </div>                
+
+                <div class="gutters-equal news-sm row">
+                  <!-- ko foreach: posts -->
+                  <div class="equal mt-3">
+                    <div class="news">
+                      <a href="#" class="news__cover">
+                        <img src="./images/news.jpg" alt="post">
+                      </a>
+                      <div class="news__body">
+                        <div class="news-tags small">
+                          <a href="#" data-bind="text: category, attr: { href: url }"></a>
+                        </div>
+                        <h3 class="news-title">
+                          <a href="#" data-bind="text: title, attr: { href: url }"></a>
+                        </h3>
+                        <div class="news-time small">
+                          <datetime data-bind="text: createDate"></datetime> <span>by <strong data-bind="text: creatorName"></strong></span>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="equal mt-3">
+                    <div class="news">
+                      <a href="#" class="news__cover">
+                        <img src="./images/news.jpg" alt="post">
+                      </a>
+                      <div class="news__body">
+                        <div class="news-tags small">
+                          <a href="#" data-bind="text: category, attr: { href: url }"></a>
+                        </div>
+                        <h3 class="news-title">
+                          <a href="#" data-bind="text: title, attr: { href: url }"></a>
+                        </h3>
+                        <div class="news-time small">
+                          <datetime data-bind="text: createDate"></datetime> <span>by <strong data-bind="text: creatorName"></strong></span>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /ko -->
+                </div>                
+
               </div>
               <div class="widget__footer">
                 <a href="#">more posts</a>

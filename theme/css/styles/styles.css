@@ -161,6 +161,15 @@ button {
 .gutters-equal.row [class*=col-]:last-child {
   padding-left: 8px; }
 
+.gutters-equal {
+  padding-left: 8px;
+  padding-right: 8px; }
+  .gutters-equal > .equal {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 8px; }
+
 .top-head {
   line-height: 32px;
   overflow: hidden; }
@@ -434,9 +443,13 @@ ol.breadcrumb {
     width: 120px;
     height: 120px;
     display: block;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .news .news__cover img {
-      max-width: 100%; }
+      max-width: 120%;
+      min-height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
     .news .news__cover:after {
       content: '';
       position: absolute;

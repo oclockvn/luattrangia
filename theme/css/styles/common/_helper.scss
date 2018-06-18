@@ -102,3 +102,13 @@
         padding-left: 8px;
     }
 }
+
+.gutters-equal {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    > .equal {
+        flex: 1;
+        margin: 0 8px;
+    }
+}
