@@ -443,8 +443,69 @@
   <!--// main -->
 
   <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-column">
+              <h4 class="footer-header">danh muc</h4>
+              <div class="footer-body">
+                <div class="link-list">
+                    <div><a href="#">homepage</a></div>
+                    <div><a href="#">about</a></div>
+                    <div><a href="#">services</a></div>
+                    <div><a href="#">form</a></div>
+                    <div><a href="#">contact</a></div>
+                </div>
 
-
+                <div class="border-top--light mt-3 pt-3">
+                    Chiu trach nhiem noi dung: <span class="text-white">Luat su Tran Hai Ly</span><br>
+                    MST: <span class="text-white">0123456789874632</span>
+                </div>
+              </div>
+            </div>
+            <!-- /footer column -->
+          </div>
+          <div class="col-md-4">
+            <div class="footer-column">
+                <h4 class="footer-header">tag cloud</h4>                
+            </div>
+            <div class="footer-body">
+              <div class="tags-cloud">
+                <!-- ko foreach: tags -->
+                <a href="#" data-bind="text: $data"></a>
+                <!-- /ko -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+              <div class="footer-column">
+                  <h4 class="footer-header">thong tin lien he</h4>                
+              </div>
+              <div class="footer-body">
+                <div class="contact-info">
+                  <div class="contact-detail">
+                    <span class="contact-icon"><i class="mdi mdi-map-marker"></i></span>
+                    <div>Tầng 5, tòa nhà 121 đường Nguyễn Phong Sắc, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội.</div>
+                  </div>
+                  <div class="contact-detail">
+                    <span class="contact-icon"><i class="mdi mdi-phone"></i></span>
+                    <div>Phone: <a href="callto:0111111111111">0111111111111</a><br>Fax: <a href="callto:0222222222222">0222222222222</a></div>
+                  </div>
+                  <div class="contact-detail">
+                    <span class="contact-icon"><i class="mdi mdi-skype"></i></span>
+                    <div><a href="skype:myskype">myskype</a></div>
+                  </div>
+                  <div class="contact-detail">
+                    <span class="contact-icon"><i class="mdi mdi-email"></i></span>
+                    <div><a href="mailto:info@luattrangia.vn">info@luattrangia.vn</a></div>
+                  </div>                  
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="js/jquery-3.3.1.min.js"></script>

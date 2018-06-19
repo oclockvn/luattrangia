@@ -61,6 +61,15 @@ class QuickNewsViewModel {
         this.faq = ko.observableArray([1,2,3,4,5,6]);
         this.ads = ko.observableArray([1,2]);
         this.clients = ko.observableArray([1,2,3,4,5,6]);
+        this.tags = ko.observableArray([
+            'Lorem ipsum', 'dolor', 'sit amet', 
+            'consectetur adipisicing', 'elit', 
+            'Laudantium aliquid', 'veritatis voluptatibus', 
+            'culpa illo quae', 'illum optio', 
+            'ducimus minus ut', 'quaerat excepturi', 
+            'quibusdam', 'at ratione repellendus', 
+            'perspiciatis', 'impedit explicabo quasi!'
+        ]);
     }    
 }
 
