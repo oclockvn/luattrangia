@@ -375,6 +375,8 @@ button {
 .link-list a {
   display: inline-block;
   padding: 4px 0; }
+.link-list > div + div {
+  margin-top: 8px; }
 
 .tags-cloud a {
   border: 1px solid rgba(255, 255, 255, 0.2);
