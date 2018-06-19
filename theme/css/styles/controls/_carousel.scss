@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
 
-    a, button {
+    [class^=nav-] {
         display: flex;
         align-items: center;
         justify-content: center;        
@@ -14,8 +14,10 @@
 }
 
 .owl-nav--center-y {
+    position: relative;
+
     .owl-nav {
-        a, button {
+        [class^=nav-] {
             position: absolute;
             top: 50%;
             margin-top: -16px;
@@ -35,7 +37,7 @@
 
 .owl-nav--circle {
     .owl-nav {
-        a, button {
+        [class^=nav-] {
             border-radius: 50%;
         }
     }
@@ -47,6 +49,23 @@
             + a, + button {
                 margin-left: 4px;
             }
+        }
+    }
+}
+
+.owl-nav--outside {
+    
+    .owl-nav {
+        .nav-prev {
+            transform: translateX(-120%);
+        }
+
+        .nav-next {
+            transform: translateX(120%);
+        }
+
+        [class^=nav-] {
+            transition: .24s ease-in;   
         }
     }
 }

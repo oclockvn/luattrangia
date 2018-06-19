@@ -43,7 +43,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .owl-nav a, .owl-nav button {
+  .owl-nav [class^=nav-] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -58,22 +58,34 @@ button {
     color: #fff;
     outline: none; }
 
-.owl-nav--center-y .owl-nav a, .owl-nav--center-y .owl-nav button {
-  position: absolute;
-  top: 50%;
-  margin-top: -16px;
-  background: rgba(0, 0, 0, 0.4);
-  outline: none; }
-  .owl-nav--center-y .owl-nav a.nav-prev, .owl-nav--center-y .owl-nav button.nav-prev {
-    left: 8px; }
-  .owl-nav--center-y .owl-nav a.nav-next, .owl-nav--center-y .owl-nav button.nav-next {
-    right: 8px; }
+.owl-nav--center-y {
+  position: relative; }
+  .owl-nav--center-y .owl-nav [class^=nav-] {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    background: rgba(0, 0, 0, 0.4);
+    outline: none; }
+    .owl-nav--center-y .owl-nav [class^=nav-].nav-prev {
+      left: 8px; }
+    .owl-nav--center-y .owl-nav [class^=nav-].nav-next {
+      right: 8px; }
 
-.owl-nav--circle .owl-nav a, .owl-nav--circle .owl-nav button {
+.owl-nav--circle .owl-nav [class^=nav-] {
   border-radius: 50%; }
 
 .owl-nav--spacing .owl-nav a + a, .owl-nav--spacing .owl-nav a + button, .owl-nav--spacing .owl-nav button + a, .owl-nav--spacing .owl-nav button + button {
   margin-left: 4px; }
+
+.owl-nav--outside .owl-nav .nav-prev {
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%); }
+.owl-nav--outside .owl-nav .nav-next {
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%); }
+.owl-nav--outside .owl-nav [class^=nav-] {
+  -webkit-transition: .24s ease-in;
+  transition: .24s ease-in; }
 
 .z-depth-0 {
   -webkit-box-shadow: none !important;
@@ -601,6 +613,31 @@ ol.breadcrumb {
       font-size: .9em; }
   .faq + .faq {
     border-top: 1px solid #eee; }
+
+.client-container {
+  margin: 0 -8px; }
+  .client-container .client {
+    display: block;
+    height: 164px;
+    background: #ddd;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #888; }
+
+.client a {
+  color: #888;
+  display: block; }
 
 html, body {
   font-family: 'Roboto Condensed', serif;

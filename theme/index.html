@@ -8,11 +8,11 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=vietnamese" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="./css/materialdesignicons.css">
-  <link rel="stylesheet" type="text/css" href="./css/carousel/owl.carousel.css">
-  <link rel="stylesheet" type="text/css" href="./css/carousel/owl.theme.default.css">
-  <link rel="stylesheet" type="text/css" href="./css/styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/css/materialdesignicons.css">
+  <link rel="stylesheet" type="text/css" href="/css/carousel/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="/css/carousel/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles/styles.css">
 
   <title>Luat Tran Gia</title>
 </head>
@@ -354,6 +354,10 @@
               </div>
 
             </div>
+
+            <div class="ads mt-2">
+              <div class="align-items-center bg-light d-flex justify-content-center" style="height: 90px;">ads 720x90</div>
+            </div>
           </div>
           <!-- /col-8 -->
 
@@ -407,7 +411,28 @@
           <!-- /col 4 -->
 
         </div>
+        <!-- /row -->
 
+      </div>
+      <!-- /container -->
+
+    </div>
+    <!-- /main section -->
+
+    <div class="section-client bg-light py-5 my-5">
+      <div class="container">
+        <div class="client-container d-flex justify-content-between owl-nav--center-y owl-nav--circle owl-nav--outside">
+          <!-- ko foreach: clients -->
+          <div class="client">
+            <a href="#" class="client__logo">client</a>
+          </div>
+          <!-- /ko -->
+
+          <div class="owl-nav">
+            <a href="#" class="nav-prev"><i class="mdi mdi-arrow-left"></i></a>
+            <a href="#" class="nav-next"><i class="mdi mdi-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -422,14 +447,14 @@
 
   </footer>
 
-  <script src="./js/jquery-3.3.1.min.js"></script>
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/owl.carousel.min.js"></script>
-  <script src="./js/jquery.scrollTo.min.js"></script>
-  <script src="./js/jquery.waypoints.min.js"></script>
-  <script src="./js/knockout-3.4.2.js"></script>
-  <script src="./js/app.js"></script>
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery.scrollTo.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/knockout-3.4.2.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 
 </html>

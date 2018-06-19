@@ -1,0 +1,20 @@
+.client-container {
+    margin: 0 -8px;
+
+    .client {
+        display: block;
+        height: 164px;
+        background: #ddd;
+        flex: 1;
+        margin: 0 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+    }
+}
+
+.client a {
+    color: #888;    
+    display: block;
+}
