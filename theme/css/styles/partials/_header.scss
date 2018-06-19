@@ -48,3 +48,16 @@
         }
     }
 }
+
+.phone {    
+    a {
+        color: #f42;
+    }
+
+    &:after {
+        border-right: 1px solid;
+        content: '';
+        padding-right: 8px;
+    }
+}
+

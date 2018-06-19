@@ -185,6 +185,9 @@ button {
 .border-top--light {
   border-top: 1px solid rgba(255, 255, 255, 0.1); }
 
+.border--light {
+  border-color: rgba(255, 255, 255, 0.2) !important; }
+
 .top-head {
   line-height: 32px;
   overflow: hidden; }
@@ -223,6 +226,13 @@ button {
     font-weight: 800;
     font-size: 3em;
     text-transform: uppercase; }
+
+.phone a {
+  color: #f42; }
+.phone:after {
+  border-right: 1px solid;
+  content: '';
+  padding-right: 8px; }
 
 .menu {
   padding: 0;
