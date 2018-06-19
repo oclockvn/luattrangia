@@ -1,5 +1,5 @@
 .footer {
-    background: #000;
+    background: hsla(0, 0%, 10%, 1);
     color: #888;
     font-weight: 300;
     padding: 2em 0;
@@ -25,9 +25,9 @@
         padding: 4px 0;    
     }
 
-    > div + div {
-        margin-top: 8px;
-    }
+    // > div + div {
+    //     margin-top: 8px;
+    // }
 }
 
 .tags-cloud {
@@ -60,4 +60,11 @@
     + .contact-detail {
         margin-top: 8px;
     }
+}
+
+.hotline {
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 800;
+    color: #f42;   
 }

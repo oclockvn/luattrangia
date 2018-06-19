@@ -359,7 +359,7 @@ button {
       background: rgba(28, 3, 3, 0.27); }
 
 .footer {
-  background: #000;
+  background: #1a1a1a;
   color: #888;
   font-weight: 300;
   padding: 2em 0; }
@@ -375,8 +375,6 @@ button {
 .link-list a {
   display: inline-block;
   padding: 4px 0; }
-.link-list > div + div {
-  margin-top: 8px; }
 
 .tags-cloud a {
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -401,6 +399,12 @@ button {
             flex: 1; }
   .contact-detail + .contact-detail {
     margin-top: 8px; }
+
+.hotline {
+  display: inline-block;
+  font-size: 3em;
+  font-weight: 800;
+  color: #f42; }
 
 ol.breadcrumb {
   margin: 0;
