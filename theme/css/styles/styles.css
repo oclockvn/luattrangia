@@ -716,12 +716,13 @@ ol.breadcrumb {
 
 .service {
   width: calc(100% / 3);
-  padding: 1em;
-  min-height: 250px;
+  padding: 2em;
+  min-height: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  border-radius: 16px; }
   .service .service__inner {
     background: #000;
     background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
@@ -740,7 +741,8 @@ ol.breadcrumb {
     padding: 2em;
     position: relative;
     -webkit-transition: .6s ease-out;
-    transition: .6s ease-out; }
+    transition: .6s ease-out;
+    border-radius: 16px; }
     .service .service__inner .service__name {
       text-transform: uppercase;
       font-weight: 600; }

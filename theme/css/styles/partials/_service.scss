@@ -1,9 +1,10 @@
 .service {   
     width: calc(100% / 3);    
-    padding: 1em;
-    min-height: 250px;
+    padding: 2em;
+    min-height: 380px;
     display: flex;
     border: 1px solid transparent;
+    border-radius: 16px;
 
     .service__inner {
         background: #000;
@@ -15,6 +16,7 @@
         padding: 2em;
         position: relative;
         transition: .6s ease-out;
+        border-radius: 16px;
 
         .service__name {
             text-transform: uppercase;
