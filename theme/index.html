@@ -217,7 +217,18 @@
     </div>
 
     <div class="service-container bg-light my-5">
-      <div class="align-items-center d-flex justify-content-center p-5 text-center">services</div>
+      <div class="container">
+          <div class="align-items-center d-flex justify-content-center py-5 text-center flex-wrap ml--1 mr--1">
+              <!-- ko foreach: services -->
+              <div class="service tilt">
+                  <div class="service__inner">
+                      <h4 class="service__name">service name</h4>
+                      <div class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+                    </div>
+              </div>
+              <!-- /ko -->
+            </div>
+      </div>
     </div>
 
     <div class="section-container">
@@ -550,6 +561,7 @@
   <script src="js/jquery.scrollTo.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/knockout-3.4.2.js"></script>
+  <script src="js/tilt.jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 

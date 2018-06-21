@@ -70,7 +70,12 @@ class QuickNewsViewModel {
             'quibusdam', 'at ratione repellendus', 
             'perspiciatis', 'impedit explicabo quasi!'
         ]);
+        this.services = ko.observableArray([1,2,3,4,5,6]);
     }    
 }
 
 ko.applyBindings(new QuickNewsViewModel());
+
+$('.tilt').tilt({
+    scale: 1.2
+})
