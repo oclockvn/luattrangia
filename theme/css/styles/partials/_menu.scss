@@ -96,3 +96,39 @@
         }
     }    
 }
+
+.link-collection {
+    .link-collection-item {
+        display: block;
+        padding: 8px 16px;
+        color: #888;
+        border-top: 1px solid #eee;
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            position: absolute;            
+            left: 100%;
+            top: 50%;
+            margin-top: -8px;
+            border: 8px solid #fff;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: none;
+            transition: 0.3s;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        &.active, &:hover {
+            color: #000;
+
+            &:after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.most-read {
+    border-top: 1px solid #eee;
+    padding: 16px;
+    color: #888;
+
+    .most-read__link {
+        display: block;
+        color: #888;
+        font-size: .9em;
+    }
+
+    &:hover {
+        color: #000;
+
+        .most-read__link {
+            color: #000;
+        }
+    }
+}
