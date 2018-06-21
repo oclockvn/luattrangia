@@ -3,6 +3,7 @@ ol.breadcrumb {
     border-radius: 2px;
     background: hsl(122, 39%, 95%);
     background: lighten($main-color, 45%);
+    background: transparent;
 
     a {
         color: $dark-color;

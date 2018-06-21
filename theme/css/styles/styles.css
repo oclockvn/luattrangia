@@ -465,7 +465,8 @@ ol.breadcrumb {
   margin: 0;
   border-radius: 2px;
   background: #edf7ee;
-  background: #f0e6d1; }
+  background: #f0e6d1;
+  background: transparent; }
   ol.breadcrumb a {
     color: #000; }
   ol.breadcrumb li.active {
@@ -852,4 +853,5 @@ ol.breadcrumb {
 html, body {
   font-family: 'Roboto Condensed', serif;
   background-color: #ebebeb; }
+
 /*# sourceMappingURL=styles.css.map */
