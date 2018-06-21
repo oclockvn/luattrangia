@@ -97,6 +97,7 @@ class QuickNewsViewModel {
         }, {
             "n": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
         }]);
+        this.newsposts = ko.observableArray([1,2,3,4,5,6,7]);
     }
 }
 

@@ -850,6 +850,41 @@ ol.breadcrumb {
     .most-read:hover .most-read__link {
       color: #000; }
 
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em 0;
+  border-top: 1px solid #ddd; }
+  .post .post__cover {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: #ddd;
+    margin-right: 16px; }
+  .post .post__body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .post .post__body > a {
+      display: block;
+      font-size: 1em;
+      color: #000;
+      color: #a68136; }
+    .post .post__body h3 {
+      font-size: 1.25em;
+      font-weight: 600;
+      margin: 0 0 8px 0; }
+    .post .post__body .small {
+      color: #888; }
+  .post .post-excerpt {
+    font-size: .9em;
+    color: #888; }
+
+.posts .post:first-of-type {
+  padding-top: 0;
+  border: none; }
+
 html, body {
   font-family: 'Roboto Condensed', serif;
   background-color: #ebebeb; }
