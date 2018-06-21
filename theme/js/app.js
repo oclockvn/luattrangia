@@ -76,6 +76,6 @@ class QuickNewsViewModel {
 
 ko.applyBindings(new QuickNewsViewModel());
 
-$('.tilt').tilt({
-    scale: 1.2
-})
+// $('.tilt').tilt({
+//     scale: 1.2
+// })
